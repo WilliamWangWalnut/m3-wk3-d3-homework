@@ -1,0 +1,19 @@
+/* Nest Nav */
+$mainfont: Arial, Helvetica, Sans-Serif;
+$white:rgb(255,255,255);
+
+nav {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+
+    ul {
+        list-style: none;
+        
+        li, a{
+            font-family: $mainfont;
+            color: $white;
+            display: inline-block;
+        }
+    }
+}

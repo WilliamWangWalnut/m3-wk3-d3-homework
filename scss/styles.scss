@@ -1,0 +1,96 @@
+@import "nav";
+@import "colors";
+
+/* Variables */
+$spanfont: 'Sacramento', 'cursive';
+$mainfont: Arial, Helvetica, Sans-Serif;
+
+@mixin style ($s1, $s2, $s3, $s4, $s5) {
+    background-color: $s1;
+    height: $s2;
+    width: $s3;
+    position: $s4;
+    margin: $s5;
+}
+
+@mixin text ($t1, $t2, $t3, $t4, $t5) {
+    position: $t1;
+    text-align: $t2;
+    top: $t3;
+    left: $t4;
+    transform: $t5;
+}
+
+%button {
+    background-color: $yellow;
+    border: none;
+    color: $white;
+    font-family: $mainfont;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+body {
+    background-color: $yellow;
+    margin-left: 40px;
+
+    /* Nest Main */
+    main {
+        width: 1350px;
+        min-height:535px;
+        background-color: $white;
+        display: flex;
+
+        #intro-text {
+            @include style($palegrey,500px, 40%, relative, 20px);
+            float: left;
+            width: 650px;
+            margin-right: 0px;
+
+            span {
+                font-family: $spanfont;
+                color: $black;
+                font-size: 30px;
+                @include text (absolute, center, 35%, 50%, translate(-45%, -120%));
+            }
+            h3 {
+                font-family: $mainfont;
+                color: $black;
+                font-size: 30px;
+                @include text (absolute, center, 50%, 40%, translate(-35%, -120%));
+            }
+            p {
+                font-family: $mainfont;
+                color: $black;
+                @include text (absolute, center, 60%, 0%, translate(6%, -120%));
+            }
+            // Mixin or Extend for button
+            button {
+                @extend %button;
+            }
+        }
+        #intro-image {
+            @include style(none, 500px, 60%, relative, 20px);
+            float: left;
+            margin-left: 0px;
+
+            img {
+                height: 500px;
+            }
+        }
+    }
+
+    /*footer*/
+    footer{
+        font-family: $mainfont;
+        font-weight: bold;
+        color: $black;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+}

@@ -1,0 +1,102 @@
+/* Nest Nav */
+nav {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li, nav ul a {
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+/* Variables */
+body main #intro-text button {
+  background-color: rgb(218, 170, 14);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, Sans-Serif;
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+
+body {
+  background-color: rgb(218, 170, 14);
+  margin-left: 40px;
+  /* Nest Main */
+  /*footer*/
+}
+body main {
+  width: 1350px;
+  min-height: 535px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+body main #intro-text {
+  background-color: rgb(212, 213, 216);
+  height: 500px;
+  width: 40%;
+  position: relative;
+  margin: 20px;
+  float: left;
+  width: 650px;
+  margin-right: 0px;
+}
+body main #intro-text span {
+  font-family: "Sacramento", "cursive";
+  color: rgb(49, 49, 49);
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-45%, -120%);
+}
+body main #intro-text h3 {
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: rgb(49, 49, 49);
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 40%;
+  transform: translate(-35%, -120%);
+}
+body main #intro-text p {
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: rgb(49, 49, 49);
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 0%;
+  transform: translate(6%, -120%);
+}
+body main #intro-image {
+  background-color: none;
+  height: 500px;
+  width: 60%;
+  position: relative;
+  margin: 20px;
+  float: left;
+  margin-left: 0px;
+}
+body main #intro-image img {
+  height: 500px;
+}
+body footer {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+/*# sourceMappingURL=styles.css.map */
